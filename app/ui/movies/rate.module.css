@@ -1,0 +1,27 @@
+.rating {
+    display: flex;
+    justify-content: center;
+}
+
+.rating__container {
+    position: relative;
+}
+
+.rating__container__svg {
+    transform: rotate(-90deg);
+}
+
+.rating__container__svg__progress {
+    transition: all 0.5s ease-in-out;
+}
+
+.rating__container__porcentage {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: calc(0.6*100%);
+    width: 100%;
+}

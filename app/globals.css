@@ -1,6 +1,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --succes: 77, 161, 79;
+  --warning: 255, 136, 0;
+  --danger: 229, 69, 69;
+
 }
 
 @media (prefers-color-scheme: dark) {
