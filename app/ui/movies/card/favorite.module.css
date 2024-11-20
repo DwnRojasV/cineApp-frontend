@@ -1,0 +1,21 @@
+:root{
+    --gray-50: 246, 246, 246;
+    --red-100: 255, 220, 220; 
+    --red-700: 229, 69, 69;
+    --red-800: 179, 57, 57;
+}
+
+.heart{
+    fill: rgb(var(--gray-50));
+    cursor: pointer;
+}
+.heart:hover{
+    fill: rgb(var(--red-100));
+
+}
+.active{
+    fill: rgb(var(--red-700));
+}
+.active:hover{
+    fill: rgb(var(--red-800));
+}

@@ -1,7 +1,7 @@
 
-export function createImageUrl(imageHeight: number | string, imageWidth: number | string, path: string) {
+export function createImageUrl(imageWidth: number | string, path: string) {
     const { TMDB_IMAGE_HOST } = process.env;
-    return `${TMDB_IMAGE_HOST}w${imageWidth}_and_h${imageHeight}bestv2${path}`
+    return `${TMDB_IMAGE_HOST}w${imageWidth}${path}`
 }
 
 export function formatDate(date: string) {
@@ -24,4 +24,8 @@ export function getColor(
 
 export function calculateFontSize(size: number, porcentage: number) {
     return size * porcentage
+}
+
+export function handleClick<T>(callbackState: (state: T) => void, newState: T) {
+    callbackState(newState)
 }
