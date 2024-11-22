@@ -26,3 +26,10 @@ export interface RateProps {
     size?: number,
     value: number
 }
+
+export interface BannerProps{
+    imagePath: string,
+    title: string,
+    description: string,
+    rate: number,
+}

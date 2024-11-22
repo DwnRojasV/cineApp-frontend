@@ -1,6 +1,12 @@
 
 export function createImageUrl(imageWidth: number | string, path: string) {
     const { TMDB_IMAGE_HOST } = process.env;
+    const complement = String(imageWidth).toLowerCase() 
+    console.log(complement);
+    
+    if (complement === "original") {
+        return `${TMDB_IMAGE_HOST}${complement}${path}`
+    }
     return `${TMDB_IMAGE_HOST}w${imageWidth}${path}`
 }
 
